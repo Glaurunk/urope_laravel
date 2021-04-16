@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class DMPagesController extends Controller
 {
@@ -12,6 +13,7 @@ class DMPagesController extends Controller
     }
 
     public function index() {
-        return view('dm.dm_home');
+        $users = User::where('role','player')->get();
+        return view('dm.dm_home', compact('users'));
     }
 }

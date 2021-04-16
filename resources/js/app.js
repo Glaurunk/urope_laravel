@@ -1,12 +1,17 @@
 require('./bootstrap');
 
-window.Vue = require('vue').default;
+// vue imports
+// window.Vue = require('vue').default;
+import Vue from 'vue';
+import App from './vue/app.vue';
+import store from './store.js';
 
-import App from './vue/app.vue'
-
-const app = new Vue({
+// create the vue instance
+new Vue({
     el: '#app',
+    store,
     components: {
         App
     }
 });
+

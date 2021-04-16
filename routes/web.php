@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CommonPagesController;
+use App\Http\Controllers\PlayerPagesController;
+use App\Http\Controllers\DMPagesController;
+use App\Http\Controllers\GameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +17,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// API
+Route::get('/data', [GameController::class, 'data'])->name('data');
+
 Route::middleware('auth')->group(function () {
 
 //  player routes
-    Route::get('/', [App\Http\Controllers\CommonPagesController::class, 'index'])->name('player_home');
-
+    Route::get('/', [CommonPagesController::class, 'index'])->name('player_home');
 // player resources
-    Route::get('/characters', [App\Http\Controllers\PlayerPagesController::class, 'index'])->name('player_characters');   
+    Route::get('/characters', [PlayerPagesController::class, 'index'])->name('player_characters');   
+// Game routes
+    Route::get('/game', [GameController::class, 'index'])->name('game');
 
 
 
-    //  dm routes
+//  dm routes
     Route::group(['prefix' => 'dm', 'middleware' => ['isdm']], function () {
-        Route::get('/', [App\Http\Controllers\DMPagesController::class, 'index'])->name('dm_home');
+        Route::get('/', [DMPagesController::class, 'index'])->name('dm_home');
     }); // end dm routes
-
 
 
 

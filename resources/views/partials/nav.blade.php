@@ -12,7 +12,7 @@
             @if (Auth::user())
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Game</a>
+                        <a class="nav-link" href="{{ route('game') }}">Join the Game</a>
                     </li>
                 </ul>
             @endif

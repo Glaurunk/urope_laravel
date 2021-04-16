@@ -17,6 +17,7 @@ class CreateCharactersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('name');
+            $table->string('image');
             $table->json('stats')->nullable();
             $table->timestamps();
 
