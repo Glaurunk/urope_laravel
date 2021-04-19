@@ -2,7 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\APIController;
 use App\Http\Controllers\GameController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,7 +16,20 @@ use App\Http\Controllers\GameController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// Public
+// retrieves all characters data
+Route::get('/data', [APIController::class, 'data'])->name('data');
+
+
+// Protected-Authenticated
+Route::middleware('auth:sanctum')->group(function () {
+// Protected-Authenticated: Everybody
+    Route::get('/roll', [GameController::class, 'rollDice'])->name('roll');
+
+// Protected-Authenticated: DM only actions
+    Route::middleware('isdm')->group(function () {
+
+    });
+
 });
 

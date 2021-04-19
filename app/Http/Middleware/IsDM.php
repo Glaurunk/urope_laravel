@@ -20,6 +20,6 @@ class IsDM
         if (Auth::user()->role === 'dm') {
             return $next($request);
         }
-        return back()->with('error', 'You need to be a dm in order to do that.');
+        return response('Error: Only the DM can do that', 403);
     }
 }

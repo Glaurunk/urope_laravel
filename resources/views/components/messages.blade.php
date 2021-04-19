@@ -1,5 +1,4 @@
 <section id="messages">
-    
     @if (session()->has('success')) 
             <div class="alert alert-success">
                 <p class="text-center">{{ Session::get('success') }}</p>

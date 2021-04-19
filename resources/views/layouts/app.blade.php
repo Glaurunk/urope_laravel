@@ -24,6 +24,8 @@
 </head>
 <body>
     @include('partials/nav')
+    @include('components/messages')
+
     <div id="app">
         <main class="py-4">
             @yield('content')

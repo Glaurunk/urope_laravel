@@ -13,6 +13,6 @@ class CommonPagesController extends Controller
 
 
     public function index() {
-        return view('common.lobby');
+      return view('common.lobby')->with('success', 'Hi!');
     }
 }

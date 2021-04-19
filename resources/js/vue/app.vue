@@ -25,16 +25,16 @@
             }, 
             methods: {
                 fetchCharacters() {
-                    fetch('http://127.0.0.1:8000/data')
-                    .then( response => {
-                        if (response.ok) {
-                            return response.json();
-                        }
+                    axios.get('http://127.0.0.1:8000/api/data', {
+                
                     })
-                    .then(data => {
-                      this.$store.state.characters = data;
+                    .then((response) => {
+                        this.$store.state.characters = response.data;
+                        //console.log(response);
                     })
-                    .catch(error => console.log(error));
+                    .catch((error) => { 
+                       console.log(error);
+                    });
                 }
             }, 
             mounted() {
@@ -44,6 +44,9 @@
 </script>
 
 <style>
+    #party-tab {
+        background-color: burlywood;
+    }
     #game-container {
         background-color: aliceblue;
     }

@@ -17,9 +17,6 @@ use App\Http\Controllers\GameController;
 |
 */
 
-// API
-Route::get('/data', [GameController::class, 'data'])->name('data');
-
 Route::middleware('auth')->group(function () {
 
 //  player routes

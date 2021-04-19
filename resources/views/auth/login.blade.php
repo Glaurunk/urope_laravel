@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container" style="background-color: #271627">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Hello mighty adventurer! Enter you email and password and ... well... enter.</div>
+            <div class="card text-warning mt-5" style="background-color: #422842">
+                <div class="card-header">
+                    <h4 class="text-center">Hello mighty adventurer! <br>  Enter you email and password and... well enter.</h4></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -53,21 +54,24 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-warning">
                                     {{ __('Login') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn bg-warning" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
                             </div>
                         </div>
                     </form>
-                </div>
+                </div><!-- card body -->
+            </div><!-- card -->
+            <div class="text-center">
+                <img src="{{ asset('/images/bob.jpeg') }}" alt="" class="img-fluid">
             </div>
-        </div>
-    </div>
-</div>
+        </div><!-- col-md-8 -->
+    </div><!-- row -->
+</div><!-- container -->
 @endsection
