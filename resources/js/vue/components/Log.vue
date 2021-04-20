@@ -1,17 +1,27 @@
 <template>
     <div class="template-container">
-        <h4>this is the log output component</h4>
-        <p>here we log players actions etc</p>
-        <DiceRoll />
+        <ul>
+            <li class="text-warning" v-for="message in this.$store.state.logMessages" :key="message.message">{{ message }}</li>
+        </ul>
     </div>
 </template>
 
 <script>
-import DiceRoll from './DiceRoll'
-
-export default {
-    components: {
-        DiceRoll
-    },
-}
+    export default {
+    
+        methods: {
+            listenToLogMessages() {
+                Echo.channel('log-messages')
+                .listen('DiceRoll', (message) => {
+                    this.$store.commit('addMessageToLog',message);
+                    const logEl = document.getElementById('log-container');
+                    logEl.scrollTop = logEl.scrollHeight;
+                });
+            },
+        },
+        mounted() {
+            this.$store.commit('clearLog');
+            this.listenToLogMessages();
+        }
+    }
 </script>

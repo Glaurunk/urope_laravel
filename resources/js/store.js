@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import axios from 'axios';
 
 // use the store before creating it
 Vue.use(Vuex);
@@ -8,5 +7,28 @@ Vue.use(Vuex);
 export default new Vuex.Store({    
     state: {
         characters: [],
+        logMessages: [],
+    },
+    mutations: {
+        clearLog(state) {
+            state.logMessages = [];
+        },
+        addMessageToLog(state, message) {
+            state.logMessages.push(message.message);
+        },
+        fetchCharacters(state) {
+            axios.get('http://127.0.0.1:8000/api/data')
+            .then((response) => {
+                state.characters = response.data;
+            })
+            .catch((error) => { 
+                console.log(error);
+            });
+        },
+    },
+    actions: {
+        fetchCharacters(context) {
+            context.commit('fetchCharacters');
+        }
     }
 });

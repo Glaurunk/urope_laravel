@@ -33,7 +33,7 @@ class DiceRoll implements ShouldBroadcastNow
      */
     public function broadcastOn()
     {
-        return new Channel('dice-rolls');
+        return new Channel('log-messages');
     }
 
 
