@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Character;
 use Auth;
 use App\Events\DiceRoll;
+use App\Events\MoveCreature;
 
 class GameController extends Controller
 {
@@ -24,5 +25,10 @@ class GameController extends Controller
         $player = Auth::user()->name ?? 'Guest';
         $roll = random_int(1,$diceType);
         event(new DiceRoll($player,$roll));
+    }
+
+    public function moveCreature($creatureType, $creatureId, $targetId, $sourceId) 
+    {
+        event(new MoveCreature($creatureType, $creatureId, $targetId, $sourceId));
     }
 }

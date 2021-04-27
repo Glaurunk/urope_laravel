@@ -1,0 +1,35 @@
+#clearlog {
+    position: relative;
+    color: white;
+    background-color:#17181b;
+    padding:    1rem;
+}
+#log-container {
+    background-color: #17181b;
+    height: 200px;
+    color: white;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+/* width */
+#log-container::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+#log-container::-webkit-scrollbar-track {
+background:#17181b;
+}
+
+/* Handle */
+#log-container::-webkit-scrollbar-thumb {
+    background:#ffed4b;
+    transition: .5s;
+}
+
+/* Handle on hover */
+#log-container::-webkit-scrollbar-thumb:hover {
+    background:orange;
+    transition: .5s;
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 require('./bootstrap');
 
-// vue imports
+// vue, store and phaser imports
 // window.Vue = require('vue').default;
 import Vue from 'vue';
 import App from './vue/app.vue';

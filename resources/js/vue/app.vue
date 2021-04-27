@@ -4,7 +4,8 @@
             <PartyTab />
         </div>
         <div id="map-container">
-            <Map />
+            <!-- <Map /> -->
+            <Grid />
         </div>
         <div id="clearlog">
             <h4 class="p-0 m-0">Log</h4>
@@ -19,20 +20,22 @@
 </template>
 
 <script>
-    import Map from './components/Map'
-    import Log from './components/Log'
-    import PartyTab from './components/PartyTab'
-    import DiceRoll from './components/DiceRoll'
-    import ClearLog from './components/ClearLog'
+    //import Map from './components/ui/Map'
+    import Log from './components/ui/Log'
+    import PartyTab from './components/ui/PartyTab'
+    import DiceRoll from './components/game/actions/DiceRoll'
+    import ClearLog from './components/ui/ClearLog'
+    import Grid from './components/ui/Grid'
 
     export default {
 // on mounted the module dispatches an async action to the store for loading the characters from the db        
             components: {
-                Map,
+   //             Map,
                 Log,
                 PartyTab,
                 DiceRoll,
-                ClearLog
+                ClearLog,
+                Grid
             }, 
             methods: {
                 callFetchCharacters() {
@@ -56,44 +59,10 @@
     }
 
     #map-container {
-        padding: 1rem;
-        height: 600px;
+        padding: 1rem 0;
         background-color: antiquewhite;
-    }
-    #clearlog {
         position: relative;
-        color: white;
-        background-color:#17181b;
-        padding:    1rem;
     }
-    #log-container {
-        background-color: #17181b;
-        height: 200px;
-        color: white;
-        padding: 1rem;
-        overflow-y: scroll;
-    }
-    /* width */
-    #log-container::-webkit-scrollbar {
-    width: 10px;
-    }
-
-    /* Track */
-    #log-container::-webkit-scrollbar-track {
-    background:#17181b;
-    }
-
-    /* Handle */
-    #log-container::-webkit-scrollbar-thumb {
-        background:#ffed4b;
-        transition: .5s;
-    }
-
-    /* Handle on hover */
-    #log-container::-webkit-scrollbar-thumb:hover {
-        background:orange;
-        transition: .5s;
-        cursor: pointer;
-    }
+    
     
 </style>

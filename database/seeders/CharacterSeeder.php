@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-
 class CharacterSeeder extends Seeder
 {
     /**
@@ -18,7 +17,7 @@ class CharacterSeeder extends Seeder
         DB::table('characters')->insert([
             'user_id' => 2,
             'name' => 'Oxus',
-            'image' => 'http://127.0.0.1:8000/images/characters/oxus.png',
+            'image' => 'http://127.0.0.1:8000/images/characters/oxus.png,http://127.0.0.1:8000/images/characters/oxus-sq.jpg',
             'stats' => json_encode([
                 'attributes' => [
                     'STR' => 18,
@@ -39,7 +38,7 @@ class CharacterSeeder extends Seeder
         DB::table('characters')->insert([
             'user_id' => 3,
             'name' => 'Boldrick',
-            'image' => 'http://127.0.0.1:8000/images/characters/boldrick.png',
+            'image' => 'http://127.0.0.1:8000/images/characters/boldrick.png,http://127.0.0.1:8000/images/characters/boldrick-sq.jpg',
             'stats' => json_encode([
                 'attributes' => [
                     'STR' => 12,
@@ -59,7 +58,7 @@ class CharacterSeeder extends Seeder
         DB::table('characters')->insert([
             'user_id' => 4,
             'name' => 'Jeronymo',
-            'image' => 'http://127.0.0.1:8000/images/characters/jronymo.png',
+            'image' => 'http://127.0.0.1:8000/images/characters/jronymo.png,http://127.0.0.1:8000/images/characters/jeronymo-sq.jpg',
             'stats' => json_encode([
                 'attributes' => [
                     'STR' => 10,

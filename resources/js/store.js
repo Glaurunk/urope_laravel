@@ -30,5 +30,12 @@ export default new Vuex.Store({
         fetchCharacters(context) {
             context.commit('fetchCharacters');
         }
+    },
+    getters: {
+        getCharacter: (state) => (id) => {
+            return state.characters.find(char => {
+                return char.id === id
+            });
+        }
     }
 });

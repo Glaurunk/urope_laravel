@@ -1,0 +1,34 @@
+.grid-container {        
+    display: grid;
+    transform: scale(0.9);
+    transform-origin: 0% 0% 0px;
+}     
+.grid-item {
+    background-color: white;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}       
+
+.grid-container.small {
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows:  100px 100px 100px 100px 100px;
+}
+
+.grid-container.medium {
+    grid-template-columns:  100px 100px 100px 100px 100px 100px;
+    grid-template-rows:  100px 100px 100px 100px 100px 100px;
+}
+
+.grid-container.large {
+    grid-template-columns:  100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows:  100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.grid-container.xlarge {
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}

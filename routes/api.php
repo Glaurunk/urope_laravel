@@ -25,6 +25,7 @@ Route::get('/data', [APIController::class, 'data'])->name('data');
 Route::middleware('auth:sanctum')->group(function () {
 // Protected-Authenticated: Everybody
     Route::get('/roll', [GameController::class, 'rollDice'])->name('roll');
+    Route::get('/move/{creatureType}/{creatureId}/{targetId}/{sourceId}', [GameController::class, 'moveCreature'])->name('roll');
 
 // Protected-Authenticated: DM only actions
     Route::middleware('isdm')->group(function () {

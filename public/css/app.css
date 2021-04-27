@@ -1,5 +1,141 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @charset "UTF-8";
+
+.grid-container {
+  display: grid;
+  transform: scale(0.9);
+  transform-origin: 0% 0% 0px;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.grid-container.small {
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+.grid-container.medium {
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+.grid-container.large {
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.grid-container.xlarge {
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+#clearlog {
+  position: relative;
+  color: white;
+  background-color: #17181b;
+  padding: 1rem;
+}
+
+#log-container {
+  background-color: #17181b;
+  height: 200px;
+  color: white;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+/* width */
+
+#log-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+#log-container::-webkit-scrollbar-track {
+  background: #17181b;
+}
+
+/* Handle */
+
+#log-container::-webkit-scrollbar-thumb {
+  background: #ffed4b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Handle on hover */
+
+#log-container::-webkit-scrollbar-thumb:hover {
+  background: orange;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.grid-item.isOccupied {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.grid-item.isOccupied:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+#radial {
+  position: absolute;
+}
+
+#radial .circular-menu {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#radial .circle {
+  width: 250px;
+  height: 250px;
+  transform: scale(0);
+  transition: all 0.4s ease-out;
+}
+
+#radial .open.circle {
+  opacity: 1;
+  transform: scale(1);
+  background-color: rgba(255, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+#radial .circle a {
+  text-decoration: none;
+  color: #17182a;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#radial .circle a:hover {
+  color: #eef;
+  transition: 0.5s;
+}
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)

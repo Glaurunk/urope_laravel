@@ -1,4 +1,6 @@
-@php $stats = json_decode($character->stats, true) @endphp
+@php $stats = json_decode($character->stats, true); 
+     $images = Str::of($character->image)->explode(',');
+@endphp
 <div class="card">
     <div class="card-header">
         <h3>{{ $character->name }}</h3>
@@ -8,7 +10,7 @@
             <div style="
                     width: 200px;
                     height:300px;
-                    background-image: url('{{ $character->image }}');
+                    background-image: url('{{ $images[0] }}');
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
