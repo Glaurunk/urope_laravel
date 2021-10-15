@@ -19,11 +19,12 @@ The main elements so far are:
 3. The DMs dashboard, where the DM can see all characters
 4. A lobby page, doing nothing or very little at the moment
 5. A game page where the main action is going on. The game page include the following components:
-    i. A characters strip where the portraits of the chracters are been displayed
-    ii. A log pane, where various messafges are being displayed
-    iii. A test button for rolling a d20 and pushing the result to the log
-    iv. a resizable map (the DM cas set the size) with square tiles where token can be placed. The map tiles can hold information such as coordinates and other stuff, and tokens can be dragged and dropped inside them. The map is beeing updated in real time. Players can click on the tokens and do stuff
-
+<ul>
+    <li> A characters strip where the portraits of the chracters are been displayed</li>
+    <li> A log pane, where various messafges are being displayed</li>
+    <li> A test button for rolling a d20 and pushing the result to the log</li>
+    <li> a resizable map (the DM cas set the size) with square tiles where token can be placed. The map tiles can hold information such as coordinates and other stuff, and tokens can be dragged and dropped inside them. The map is beeing updated in real time. Players can click on the tokens and do stuff</li>
+</ul>
 
 ## Future plans
 Since this is another yet of my infinite side-projects there is no such thing as a timetable. Stuff may or may not be added according to time I choose to further invest. Nevertheless plans include:
