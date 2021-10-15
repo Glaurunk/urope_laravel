@@ -2,7 +2,7 @@
 <i>aka Universal Role Playing Engine</i>
 
 ## About UROPE and the whole VTT thing
-UROPE was actually the name of a custom tabletop role playing system I had created back in the 90s, based on the d20. The actual system remains printed in my bookcase and from time to time I peek through its pages and get amazed by the seer ammount of time I had to invest in such efforts (no regrets!) Since then I have devised a multitude of other system with equivalent unsuccessfull names and poor playability. Needless to mention we still play RPGs and I have been stuck with the DM role for the last 30 years.
+UROPE was actually the name of a custom tabletop role playing system I had created back in the 90s, based on the d20. The actual system remains printed in my bookcase and from time to time I peek through its pages and get amazed by the seer ammount of time I used to invest in such efforts (no regrets!) Since then I have devised a multitude of other system with equivalent unsuccessfull names and poor playability. Needless to mention we still play RPGs and I have been stuck with the DM role for the last 30 years.
 During the COVID-19 months we have tried some online vtt solutions and it has worked well for the most part. Except for that these products suck, they really suck for the most part. So I have decided to make my own VTT and - by the way - epxeriment with some technologies just for fun. So this is a project just for my personal amusement, do not expect best practices etc, but if you find the idea appealing in the end, please by my guest - but proceed at your own risk :)
 
 ## Technologies in the project
