@@ -33,7 +33,8 @@ Since this is another yet of my infinite side-projects there is no such thing as
 3. Create a combat and initiative tracker and implement actual combat with dicerolling
 4. Create a 3d dice roller (The plan is to get this done in Unity3d with blendfer dice models and unity physics and import it as a webAssembly module, because it seems a fun thing to do!)
 5. Add custom map support (do not know yet what I want)
-6. Add complete character, monster, items, spells and campaign models and get a proper back end admin instead of manual bd entries. 
+6. Create my own file manager for laravel because I always have problems with 3rd party file managers on deployment.
+7. Add complete character, monster, items, spells and campaign models and get a proper back end admin instead of manual bd entries. 
 8. Implement a saving system to get persistent data accross sessions
 9. Add support for a proper system like Pathfinder, or D&D SRD, or Call of Cthulhu or whatever... 
 10. Add audiovisual effects and maybe line of sight and other stuff...
