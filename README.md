@@ -31,7 +31,7 @@ Since this is another yet of my infinite side-projects there is no such thing as
 1. Create an intuitive player actions interface with round by round, step by step options and a proper UX with hover effects, animations etc ffs.
 2. Implement a graphic inventory with drag and drop functionality and visual elements instead of text descirpitions ffs again.
 3. Create a combat and initiative tracker and implement actual combat with dicerolling
-4. Create a 3e dice roller (The plan is to get this done in Unity3d with blendfer dice models and unity physics and import it as a webAssembly module, because it seems a fun thing to do!)
+4. Create a 3d dice roller (The plan is to get this done in Unity3d with blendfer dice models and unity physics and import it as a webAssembly module, because it seems a fun thing to do!)
 5. Add custom map support (do not know yet what I want)
 6. Add complete character, monster, items, spells and campaign models and get a proper back end admin instead of manual bd entries. 
 8. Implement a saving system to get persistent data accross sessions
