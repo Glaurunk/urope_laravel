@@ -28,8 +28,8 @@ The main elements so far are:
 
 ## Future plans
 Since this is another yet of my infinite side-projects there is no such thing as a timetable. Stuff may or may not be added according to time I choose to further invest. Nevertheless plans include:
-1. Create an intuitive player actions interface with round by round, step by step options.
-2. Implement a graphic inventory with drag and drop functionality and visual elements instead of text descirpitions ffs.
+1. Create an intuitive player actions interface with round by round, step by step options and a proper UX with hover effects, animations etc ffs.
+2. Implement a graphic inventory with drag and drop functionality and visual elements instead of text descirpitions ffs again.
 3. Create a combat and initiative tracker and implement actual combat with dicerolling
 4. Create a 3e dice roller (The plan is to get this done in Unity3d with blendfer dice models and unity physics and import it as a webAssembly module, because it seems a fun thing to do!)
 5. Add custom map support (do not know yet what I want)
