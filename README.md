@@ -1,5 +1,5 @@
 # UROPE
-aka Universal Role Playing Engine
+<i>aka Universal Role Playing Engine</i>
 
 ## About UROPE and the whole VTT thing
 UROPE was actually the name of a custom tabletop role playing system I had created back in the 90s, based on the d20. The actual system remains printed in my bookcase and from time to time I peek through its pages and get amazed by the seer ammount of time I had to invest in such efforts (no regrets!) Since then I have devised a multitude of other system with equivalent unsuccessfull names and poor playability. Needless to mention we still play RPGs and I have been stuck with the DM role for the last 30 years.
